@@ -1,10 +1,36 @@
+using System.Collections.Generic;
 class Program
 {
-public static void Main(string[] args)
+public static int Main(string[] args)
 {
+bool parsed = Parser.ParseFile();
+if(!parsed)
+{
+Console.WriteLine("failed to load api.txt! Please create your api.txt file containing the data.");
+return 1;
+}
+if(Database.GetSize() <1)
+{
+Console.WriteLine("Error! Your api.txt has no valid values!.");
+return 1;
+}
+var data = Database.Data;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
+foreach(ApiData value in data)
+{
+string type = value.RequestType;
+if(type == "get")
+{
+app.MapGet(value.Endpoint, () =>"value");
+}
+else if(type == "post")
+{
+app.MapPost(value.Endpoint, () =>"value");
+}
+}
 app.MapGet("/", () => "Hello World!");
 app.Run();
+return 0;
 }
 }
