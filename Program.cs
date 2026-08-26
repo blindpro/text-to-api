@@ -14,6 +14,8 @@ if(Database.GetSize() <1)
 Console.WriteLine("Error! Your api.txt has no valid values!.");
 return 1;
 }
+Console.WriteLine("api.txt data loaded.");
+Console.WriteLine("api.txt contains "+Database.GetSize()+" values");
 var data = Database.Data;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
