@@ -24,7 +24,7 @@ foreach(ApiData value in data)
 string type = value.RequestType;
 if(type == "get")
 {
-app.MapGet(value.Endpoint, () =>"value");
+app.MapGet(value.Endpoint, () =>value.Value);
 }
 else if(type == "post")
 {
