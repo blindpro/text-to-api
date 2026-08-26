@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
     "net10.0": {}
   },
@@ -8,29 +8,25 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\NOAHB\\.nuget\\packages\\": {}
+    "C:\\Users\\ATRC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NOAHB\\OneDrive\\projects\\cSharp\\text-to-api\\text-to-api.csproj",
+      "projectUniqueName": "C:\\Users\\ATRC\\OneDrive\\projects\\cSharp\\text-to-api\\text-to-api.csproj",
       "projectName": "text-to-api",
-      "projectPath": "C:\\Users\\NOAHB\\OneDrive\\projects\\cSharp\\text-to-api\\text-to-api.csproj",
-      "packagesPath": "C:\\Users\\NOAHB\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NOAHB\\OneDrive\\projects\\cSharp\\text-to-api\\obj\\",
+      "projectPath": "C:\\Users\\ATRC\\OneDrive\\projects\\cSharp\\text-to-api\\text-to-api.csproj",
+      "packagesPath": "C:\\Users\\ATRC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ATRC\\OneDrive\\projects\\cSharp\\text-to-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\NOAHB\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ATRC\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
-      "sources": {
-        "https://api.nuget.org/v3/index.json": {}
-      },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {}
         }
@@ -45,11 +41,10 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "imports": [
           "net461",
@@ -70,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.111/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
