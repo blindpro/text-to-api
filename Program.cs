@@ -23,16 +23,16 @@ var app = builder.Build();
 foreach(ApiData value in data)
 {
 string type = value.RequestType;
+Func<string,string> callback = Database.GetMethod(value.Method);
 if(type == "get")
 {
-app.MapGet(value.Endpoint, () =>value.Value);
+app.MapGet(value.Endpoint, () =>callback);
 }
 else if(type == "post")
 {
-app.MapPost(value.Endpoint, () =>"value");
+app.MapPost(value.Endpoint, () =>callback);
 }
 }
-app.MapGet("/", () => "Hello World!");
 app.Run();
 return 0;
 }

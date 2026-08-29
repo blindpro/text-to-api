@@ -19,4 +19,8 @@ public static bool HasMethod(string name)
     {
 return Methods.ContainsKey(name);
 }
+public static Func<string,string> GetMethod(string name)
+{
+return Methods[name];
+}
 }
