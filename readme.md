@@ -12,5 +12,5 @@ requestType:endpoint:returnMethod:value
 
 # notes
 You can not put a extra : inside the value.
-
-Run with dotnet run.
+- Current methods include, text and file for now.
+- Run with dotnet run.
