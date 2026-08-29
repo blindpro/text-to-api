@@ -10,7 +10,7 @@ return false;
 foreach(string line in File.ReadLines("api.txt"))
 {
 string[] parts = line.Split(":",StringSplitOptions.RemoveEmptyEntries);
-if(parts.Length<4)
+if(parts.Length<4 || ! Database.HasMethod(parts[2]))
 {
 continue;
 }
