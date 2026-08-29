@@ -3,6 +3,7 @@ class Program
 {
 public static int Main(string[] args)
 {
+Setup.Start();
 bool parsed = Parser.ParseFile();
 if(!parsed)
 {
