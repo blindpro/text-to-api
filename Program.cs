@@ -26,11 +26,11 @@ string type = value.RequestType;
 Func<string,string> callback = Database.GetMethod(value.Method);
 if(type == "get")
 {
-app.MapGet(value.Endpoint, () =>callback);
+app.MapGet(value.Endpoint, () =>callback(value.Value));
 }
 else if(type == "post")
 {
-app.MapPost(value.Endpoint, () =>callback);
+app.MapPost(value.Endpoint, () =>callback(value.Value));
 }
 }
 app.Run();
